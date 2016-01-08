@@ -6,7 +6,7 @@ module Ruboty
       env :JENKINS_API_TOKEN, "Jenkins API Token"
 
       on(
-        /build (?<repo>[a-zA-Z0-9_-]+)(?:\/(?<branch>[a-zA-Z0-9_-]+))? ?(?<platform>(?:iOS|Android))? ?(?:(?<editor_version>\b.+))?\z/,
+        /build (?<repo>[a-zA-Z0-9_-]+)(?:\/(?<branch>[a-zA-Z0-9_-]+))? ?(?<platform>(?:iOS|Android))? ?(?<env>(?:development|production))? ?(?:(?<editor_version>\b.+))?\z/,
         name: "build",
         description: "Kick build job in Jenkins",
       )

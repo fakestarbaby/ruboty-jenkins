@@ -25,6 +25,7 @@ module Ruboty
             repository: given_repository,
             branch: given_branch,
             platform: given_platform,
+            env: given_env,
             editor_version: given_editor_version,
             user: sender_name
           }
@@ -44,6 +45,10 @@ module Ruboty
 
         def given_platform
           message[:platform] || ""
+        end
+
+        def given_env
+          message[:env] || ""
         end
 
         def given_editor_version

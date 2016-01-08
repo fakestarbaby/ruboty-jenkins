@@ -12,7 +12,7 @@ gem "ruboty-jenkins"
 ## Usage
 
 ```
-@ruboty build <repo>[/<branch>] [<platform>] [<editor_version>] - Kick build job in Jenkins
+@ruboty build <repo>[/<branch>] [<platform>] [<env>] [<editor_version>] - Kick build job in Jenkins
 ```
 
 ## ENV

@@ -17,7 +17,7 @@ module Ruboty
           curl.http_auth_types = :basic
           curl.username = ENV["JENKINS_USER_ID"]
           curl.password = ENV["JENKINS_API_TOKEN"]
-         curl.http_post(curl.url, "data=#{post_options.to_json}", "requested_user=#{sender_name}")
+          curl.http_post(curl.url, "data=#{post_options.to_json}", "requested_user=#{sender_name}")
         end
 
         def post_options
